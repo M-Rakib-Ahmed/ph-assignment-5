@@ -58,3 +58,22 @@ document.querySelector('#donate-now2').addEventListener('click', () => {
 
 // third functions end
 
+
+
+
+// button functionality start
+const historyTab = document.querySelector('#history-tab');
+historyTab.addEventListener('click',()=>{
+    console.log('hello world');
+    
+    historyTab.classList.add('bg-[#81d82f]')
+    document.querySelector('#donation-tab').classList.remove('bg-[#81d82f]')
+})
+const donationTab = document.querySelector('#donation-tab');
+donationTab.addEventListener('click',()=>{
+    console.log('hello world');
+    
+    donationTab.classList.add('bg-[#81d82f]')
+    document.querySelector('#history-tab').classList.remove('bg-[#81d82f]')
+})
+// button functionalit end
