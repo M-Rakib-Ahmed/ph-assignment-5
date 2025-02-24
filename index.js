@@ -6,6 +6,16 @@ document.querySelector('#donate-now').addEventListener('click',()=>{
     const donateMoney = parseFloat(document.querySelector('#donate-money').innerText);
     console.log(donateMoney);
     
+        if (isNaN(inputDonate) || inputDonate<= 0) {
+            alert('invalid input')
+            return
+        } else {
+            console.log("Donation successful!");
+            my_modal_5.showModal()
+        }
+    
+
+    
     const totalDoations = donateMoney - inputDonate;
     console.log(totalDoations);
     const payDonate = document.querySelector('#donate-money').innerText = totalDoations;
@@ -26,6 +36,13 @@ document.querySelector('#donate-now1').addEventListener('click', () => {
     const donateMoney = parseFloat(document.querySelector('#donate-money').innerText);
     console.log(donateMoney);
 
+    if (isNaN(inputDonate) || inputDonate <= 0) {
+        alert('invalid input')
+        return
+    } else {
+        console.log("Donation successful!");
+        my_modal_5.showModal()
+    }
     const totalDoations = donateMoney - inputDonate;
     console.log(totalDoations);
     const payDonate = document.querySelector('#donate-money').innerText = totalDoations;
@@ -43,7 +60,14 @@ document.querySelector('#donate-now2').addEventListener('click', () => {
 
     const inputDonate = parseFloat(document.querySelector('#danate-input2').value);
     const donateMoney = parseFloat(document.querySelector('#donate-money').innerText);
-    console.log(donateMoney);
+  
+    if (isNaN(inputDonate) || inputDonate <= 0) {
+        alert('invalid input')
+        return
+    } else {
+        console.log("Donation successful!");
+        my_modal_5.showModal()
+    }
 
     const totalDoations = donateMoney - inputDonate;
     console.log(totalDoations);
@@ -52,8 +76,6 @@ document.querySelector('#donate-now2').addEventListener('click', () => {
     const Donate = parseFloat(document.querySelector('#pay-donate2').innerText);
     const succuessDonate = inputDonate + Donate;
     document.querySelector('#pay-donate2').innerText = succuessDonate;
-    console.log(succuessDonate);
-
 })
 
 // third functions end
